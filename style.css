@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+html,
+body{
+    height:100%;
+    width:100%;
+}
+main{
+    height:100%;
+    width: 100%;
+    background-color: lightblue;
+}
+nav{
+    padding: 40px 70px;
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+nav h2{
+    font-size: 50px;
+    font-weight: 500;
+}
+nav ul{
+    font-size: 30px;
+    color: black;
+    text-decoration: underline;
+    justify-content: space-between;
+    font-style: normal;
+    display: inline;
+}
+section{
+    padding: 100px;
+}
+section .hero-text1{
+    background-color: rgb(168, 168, 241);
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    
+}
+.hero-text1 h1{
+    font-size: 150px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+    line-height: 120px;
+    
+}
+.hero-text1 .video{
+    height: 100px;
+    width: 300;
+    background-color: rgb(0, 0, 0);
+    border-radius:100px ;
+    margin-top: 10px;
+}
+section .hero-text2{
+    background-color: rgb(168, 168, 241);
+    padding: 40px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    
+}
+.hero-text2 h2{
+    font-size: 150px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+    line-height: 120px;
+    
+
+}
+.hero-text2 p{
+    font-size: 12px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 12px;
+    margin-bottom: 80px;
+    
+}
+@media (max-width: 768px) {
+    /* 📌 NAVIGATION FIX */
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        text-align: center;
+    }
+    nav .part2 {
+        flex-direction: column;
+        gap: 15px; /* Reduce spacing */
+    }
+    nav h2 {
+        font-size: 30px; /* Reduce font size */
+    }
+    nav a {
+        font-size: 20px;
+    }
+
+    /* 📌 SECTION FIX */
+    section {
+        padding: 50px 20px; /* Reduce padding */
+        text-align: center;
+    }
+
+    /* 📌 HERO TEXT 1 (DIGITIZE) */
+    .hero-text1 {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center;
+        text-align: center;
+    }
+    .hero-text1 h1 {
+        font-size: 80px; /* Reduce text size */
+        line-height: 90px;
+    }
+    .hero-text1 .video {
+        width: 100%; /* Make video full width */
+        max-width: 250px; /* Set a limit */
+        height: 80px;
+        border-radius: 50px;
+    }
+
+    /* 📌 HERO TEXT 2 (IDEAS) */
+    .hero-text2 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .hero-text2 h2 {
+        font-size: 50px;
+    }
+    .hero-text2 p {
+        font-size: 14px;
+        width: 90%;
+    }
+}
